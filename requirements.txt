@@ -1,5 +1,6 @@
+matplotlib
 # python_version >= 3.7
-
+tkinter==8.5
 numpy
 imutils
 opencv-python==4.1.2.30
