@@ -28,7 +28,6 @@ def main():
     print("Press 's' to save newly created image, after highlighting the image window. Press any other key to exit.")
     if option == "rotate":
         new_image, name_suffix = rotate(ori)
-        print(name_suffix)
     elif option == "line":
         draw_line(ori, 100)
     elif option == "bw":
@@ -74,7 +73,7 @@ def draw_mask(image):
     image_with_mask = image.copy()
     print("Add a mask to the image ...")
     change_color_pixels = image[:, :, 0] < 20
-    image_with_mask[change_color_pixels] = [0, 0, 255]
+    image_with_mask[change_color_pixels] = [0, 255, 0]
     cv2.imshow("Image with mask", image_with_mask)
     return image_with_mask, "_mask"
 
