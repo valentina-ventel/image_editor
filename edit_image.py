@@ -29,7 +29,7 @@ def main():
     if option == "rotate":
         new_image, name_suffix = rotate(ori)
     elif option == "line":
-        draw_line(ori, 100)
+        new_image, name_suffix = draw_line(ori, 100)
     elif option == "bw":
         new_image, name_suffix = draw_bw(ori)
     elif option == "mask":
